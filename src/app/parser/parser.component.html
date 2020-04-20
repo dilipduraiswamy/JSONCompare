@@ -1,0 +1,44 @@
+
+
+ 
+
+ 
+
+  
+
+ 
+
+    <!-- Terminal -->
+    
+  
+    
+  
+    
+  
+
+  
+<mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile
+        
+        [colspan]="2"
+        [rowspan]="2"
+        [style.background]="lightblue">
+        <!-- (input)="leftModel=$event.target.textContent" -->
+        <div class="terminal" >
+            <pre contenteditable="true" 
+            [textContent]="leftModel"  >ng generate component xyz</pre>
+         
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile
+        
+    [colspan]="2"
+    [rowspan]="2"
+    [style.background]="lightblue">
+    <div class="terminal" >
+        <!-- input)="rightModel=$event.target.textContent" -->
+        <pre contenteditable="true"  [textContent]="rightModel"  >ng generate component xyz</pre>
+     
+    </div>
+</mat-grid-tile>
+  </mat-grid-list>
